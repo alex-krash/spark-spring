@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bom</artifactId>
+        <groupId>com.badoo</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spark2</artifactId>
+    <groupId>com.badoo.bom</groupId>
+
+    <properties>
+        <spark.version>2.3.0</spark.version>
+        <spark.scala.version>2.11.8</spark.scala.version>
+        <spark.scala.version.short>2.11</spark.scala.version.short>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_${spark.scala.version.short}</artifactId>
+            <version>${spark.version}</version>
+            <scope>${work.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_${spark.scala.version.short}</artifactId>
+            <version>${spark.version}</version>
+            <scope>${work.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-hive_${spark.scala.version.short}</artifactId>
+            <version>${spark.version}</version>
+            <scope>${work.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_${spark.scala.version.short}</artifactId>
+            <version>${spark.version}</version>
+            <scope>${work.scope}</scope>
+        </dependency>
+    </dependencies>
+
+</project>
